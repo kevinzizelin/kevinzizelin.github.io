@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zi Ze (Kevin) Lin — Memos</title>
+    <title>LZZ — Memos</title>
     <link>https://linzize.com/</link>
     <atom:link href="https://linzize.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>Investment memos and notes by Zi Ze (Kevin) Lin.</description>
+    <description>Investment memos and notes by LZZ.</description>
     <language>en-us</language>
 
     <!-- Copy this block for each new memo. Newest goes first.
