@@ -1,0 +1,145 @@
+/* ============================================================
+   Everything that controls how the site looks lives in here.
+   It is short on purpose. Change the numbers, reload, repeat.
+   ============================================================ */
+
+body {
+  /* The pale background. Try #e8e4d8 (parchment) or #fff (plain white). */
+  background: #dfe8d8;
+  color: #000;
+
+  font-family: "Times New Roman", Times, Georgia, serif;
+  font-size: 17px;
+  line-height: 1.5;
+
+  /* Caps the line length so long memos stay readable.
+     Raise to 60rem if you want the full-width Berkshire look. */
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 5rem;
+}
+
+/* ---------- links: the classic browser blue/purple ---------- */
+
+a          { color: #0000ee; }
+a:visited  { color: #551a8b; }
+a:hover    { background: #ffffc0; }
+a:focus-visible { outline: 2px solid #000; outline-offset: 1px; }
+
+/* ---------- headings ---------- */
+
+h1 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.6rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 1.75rem 0 0.4rem;
+}
+
+/* ---------- the horizontal rules that divide sections ---------- */
+
+hr {
+  border: 0;
+  border-top: 1px solid #9a9a8c;
+  margin: 2rem 0 1.5rem;
+}
+
+/* ---------- lists ---------- */
+
+ul { padding-left: 1.2rem; }
+li { margin-bottom: 0.4rem; }
+
+ul.memos       { list-style: none; padding-left: 0; }
+ul.memos li    { margin-bottom: 1.1rem; }
+ul.memos a     { font-weight: bold; }
+
+.meta {
+  font-size: 0.85rem;
+  color: #555;
+  margin-left: 0.4rem;
+}
+
+.blurb {
+  font-size: 0.95rem;
+  color: #333;
+  margin-top: 0.15rem;
+}
+
+/* ---------- memo page bits ---------- */
+
+.memo-header  { margin-bottom: 1.5rem; }
+.memo-header h1 { margin-bottom: 0.4rem; }
+
+.memo-facts {
+  font-size: 0.9rem;
+  color: #444;
+  text-align: center;
+}
+
+blockquote {
+  margin: 1.25rem 0 1.25rem 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid #9a9a8c;
+  font-style: italic;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #9a9a8c;
+  padding: 0.35rem 0.6rem;
+  text-align: right;
+}
+
+th        { background: rgba(0,0,0,0.05); }
+th:first-child, td:first-child { text-align: left; }
+
+.note, .footer {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.disclosure {
+  font-size: 0.85rem;
+  color: #444;
+  margin-top: 2rem;
+}
+
+/* Banner for the sample memo. Delete this rule once the sample is gone. */
+.sample {
+  font-size: 0.9rem;
+  background: #fff8c4;
+  border: 1px solid #9a9a8c;
+  padding: 0.6rem 0.8rem;
+  margin: 1.25rem 0;
+}
+
+/* ---------- small screens ---------- */
+
+@media (max-width: 480px) {
+  body { padding: 1.25rem 1rem 3rem; font-size: 16px; }
+  h1   { font-size: 1.35rem; }
+}
+
+/* ---------- printing / saving as PDF ----------
+   Memos get printed and emailed around. Make that look right. */
+
+@media print {
+  body { background: #fff; max-width: none; font-size: 11pt; padding: 0; }
+  a    { color: #000; text-decoration: none; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; }
+  hr, .footer { display: none; }
+}
