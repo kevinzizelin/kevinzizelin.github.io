@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LZZ — Memos</title>
-    <link>https://linzize.com/</link>
-    <atom:link href="https://linzize.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://kevinzizelin.github.io/</link>
+    <atom:link href="https://kevinzizelin.github.io/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Investment memos and notes by LZZ.</description>
     <language>en-us</language>
 
@@ -11,8 +11,8 @@
          pubDate format matters: Day, DD Mon YYYY HH:MM:SS +0000 -->
     <item>
       <title>Cascade Bearing Corp. (sample memo)</title>
-      <link>https://linzize.com/memos/2026-07-31-cascade-bearing.html</link>
-      <guid>https://linzize.com/memos/2026-07-31-cascade-bearing.html</guid>
+      <link>https://kevinzizelin.github.io/memos/2026-07-31-cascade-bearing.html</link>
+      <guid>https://kevinzizelin.github.io/memos/2026-07-31-cascade-bearing.html</guid>
       <pubDate>Fri, 31 Jul 2026 09:00:00 +0000</pubDate>
       <description>Sample memo — fictional company, invented figures. A formatting template, not a real recommendation.</description>
     </item>
