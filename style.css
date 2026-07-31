@@ -127,11 +127,48 @@ th:first-child, td:first-child { text-align: left; }
   margin: 1.25rem 0;
 }
 
+/* ---------- email signup ---------- */
+
+.subscribe { margin: 0.9rem 0 0.6rem; }
+
+.subscribe label {
+  display: block;
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.3rem;
+}
+
+.subscribe input[type="email"],
+.subscribe input[type="submit"] {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid #9a9a8c;
+}
+
+.subscribe input[type="email"] {
+  background: #fff;
+  width: 18rem;
+  max-width: 100%;
+}
+
+.subscribe input[type="submit"] {
+  background: rgba(0,0,0,0.06);
+  padding: 0.35rem 0.9rem;
+  margin-left: 0.3rem;
+  cursor: pointer;
+}
+
+.subscribe input[type="submit"]:hover { background: #ffffc0; }
+
 /* ---------- small screens ---------- */
 
 @media (max-width: 480px) {
   body { padding: 1.25rem 1rem 3rem; font-size: 16px; }
   h1   { font-size: 1.35rem; }
+
+  .subscribe input[type="email"]  { width: 100%; margin-bottom: 0.45rem; }
+  .subscribe input[type="submit"] { margin-left: 0; }
 }
 
 /* ---------- printing / saving as PDF ----------
